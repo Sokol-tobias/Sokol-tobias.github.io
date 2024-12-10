@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css">
+    <title>TP#Web Final</title>
+
+    <style>
+        body {
+            background-color: #DB1E1A;
+            color: white;
+        }
+
+        .container {
+            background-color: #1A8BDB;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #1A8BDB;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #146BA1;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="paper container">
+        <header>
+            <h1>Aventura Gráfica: Gran Turismo</h1>
+        </header>
+        <div class="row flex-spaces tabs">
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1">Aventura gráfica</label>
+
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">Proceso</label>
+
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3">Creador</label>
+
+            <div class="content" id="content1">
+                <h2>¿De qué se trató la aventura?</h2>
+                <p><strong>Gran Turismo</strong> La aventura gráfica se inspiró en la película "Gran Turismo" creada en
+                    base
+                    a la historia de <strong>Jann Mardenborough</strong> quien fue un jugador talentoso de Gran Turismo
+                    que
+                    ganó una competencia organizada por Nissan. Como parte del premio, pudo entrenar como piloto
+                    profesional
+                    y eventualmente debutó en las 24 Horas de Le Mans, una de las competiciones más prestigiosas del
+                    mundo
+                    del automovilismo. La película narra su viaje desde las consolas hasta las pistas de carreras, y
+                    cómo su
+                    amor por los videojuegos lo ayudó a superar los obstáculos en su camino hacia el éxito.</p>
+                <img src="https://elcandelerotecnologico.com/wp-content/uploads/2023/05/playstation_gran-turismo-la-pelicula.jpg"
+                    alt="Portada de la pelicula Gran Turismo">
+                <div class="row flex-spaces child-borders">
+                    <label class="paper-btn margin" for="modal-1">Juego</label>
+                </div>
+                <input class="modal-state" id="modal-1" type="checkbox">
+                <div class="modal">
+                    <label class="modal-bg" for="modal-1"></label>
+                    <div class="modal-body">
+                        <label class="btn-close" for="modal-1">X</label>
+                        <iframe src="tpfinalparte2/index.html" frameborder="0" width="650" height="490"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content" id="content2">
+                <h2>¿Cómo fue el proceso de creación?</h2>
+                <div class="collapsible">
+                    <input id="collapsible1" type="checkbox" name="collapsible">
+                    <label for="collapsible1">Diagrama de flujo</label>
+                    <div class="collapsible-body">
+                        <span>En este diagrama de flujo que creamos con mi excompañera Victoria Ocanto, decimimos
+                            plantear 3 finales diferentes en el que las decisiones se basaran en una acción que no
+                            sea un si o un no (excepto la primera)</span>
+                        <img src="diagrama de flujo.jpg" alt="Diagrama de flujo">
+                    </div>
+                </div>
+                <div class="collapsible">
+                    <input id="collapsible2" type="checkbox" name="collapsible">
+                    <label for="collapsible2">Uso de IA para la generación de imágenes</label>
+                    <div class="collapsible-body" style=" width: auto; height: auto;">
+                        <span>Para poder mostrar el transcurso del diagrama en la aventura gráfica, utilizamos
+                            varias inteligencias artificiales para generar las imagenes. Una de las que más se uso
+                            fue Meta AI, aunque también utilizamos Bing Image Creator.</span>
+                        <div class="row flex-spaces">
+                            <div class="sm-4 md-6 lg-4 col"><img src="img1.jpg" alt=""></div>
+                            <div class="sm-4 md-6 lg-4 col"><img src="img14.jpg" alt=""></div>
+                            <div class="sm-4 md-6 lg-4 col"><img src="img15.jpg" alt=""></div>
+                            <div class="sm-12 md-6 lg-12 col">Estas son algunas de las imagenes que se usaron para la
+                                Aventura gráfica</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapsible">
+                    <input id="collapsible3" type="checkbox" name="collapsible">
+                    <label for="collapsible3">Aventura Gráfica</label>
+                    <div class="collapsible-body" style=" width: auto; height: auto;">
+                        <span>Esta es la aventura gráfica creada a principios del cuatrimeste. Espero que la disfruten</span>
+                        <div class="row flex-spaces child-borders">
+                            <label class="paper-btn margin" for="modal-2">Comienza tu aventura</label>
+                        </div>
+                        <input class="modal-state" id="modal-2" type="checkbox">
+                        <div class="modal">
+                            <label class="modal-bg" for="modal-2"></label>
+                            <div class="modal-body">
+                                <label class="btn-close" for="modal-2">X</label>
+                                <iframe src="tpfinalparte1/index.html" frameborder="0" width="650" height="490"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="content3">
+                <h2>Sobre el creador</h2>
+                <h3>Tobias Ezequiel Sokol</h3>
+                <p>Tengo 21 años, soy estudiante de primer año de la carrera de diseño multimedial, soy fanático de los
+                    videojuegos y es una de mis primeras experiencias en la creación y desarrollo de un mini juego. Esta
+                    experiencia me llevo a adentrarme más en lo que es la programación y todas sus formas creativas que
+                    contiene, además de mostrarme lo difícil, pero interesante, que puede llegar a ser el mundo de la programación.</p>
+                <img src="fotoPerfil.jpg" alt="foto del creador del juego interactivo">
+            </div>
+        </div>
+
+        <footer style="text-align: center;">
+            <p>&copy; Trabajo práctico tp1#web</p>
+        </footer>
+    </div>
+
+
+    <button id="irHastaArriba"
+        style="position: fixed; bottom: 20px; right: 20px; display: none; background-color: #146BA1; color: white; border: none; border-radius: 5px; padding: 10px 15px; cursor: pointer;"
+        ;>Ir al inicio</button>
+    <script>
+        window.onscroll = function () {
+            const btn = document.getElementById("irHastaArriba");
+            if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+        document.getElementById("irHastaArriba").onclick = function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+    </script>
+
+
+</body>
+
+</html>
